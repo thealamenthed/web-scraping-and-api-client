@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alatsi&family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@200;300;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/client/assets/css/style.css" />
   <title>Web Scraping and Api</title>
 </head>
@@ -19,15 +17,24 @@
   <!-- LEFT SIDE  -->
   <div class="container">
     <div class="left_side">
-      <a href="/" class="logo"><img src="/client/assets/img/Logo.png"></a>
+      <a href="#" class="logo"><img src="/client/assets/img/Logo.png"></a>
       <div class="category">
         <h3 class="title">Musiques</h3>
         <ul>
-          <li><span class="text" id="all">Tous les albums</span></li>
-          <li><span class="text" id="rap">Rap</span></li>
-          <li><span class="text" id="pop">Pop</span></li>
-          <li><span class="text" id="variete">Variété française</span></li>
           <li><span class="text" id="top10">Top 10</span></li>
+          <li><span class="text" id="all">Tous les albums</span></li>
+
+          <br>
+          <h3><span class="title">Catégorie </span></h3>
+
+          <li><span class="text" id="Rap">Rap</span></li>
+          <li><span class="text" id="RnB">RnB</span></li>
+          <li><span class="text" id="Pop">Pop</span></li>
+          <li><span class="text" id="Afro">Afro</span></li>
+          <li><span class="text" id="Rock">Rock</span></li>
+          <li><span class="text" id="Country">Country</span></li>
+          <li><span class="text" id="variete">Variété Française</span></li>
+
         </ul>
       </div>
     </div>
@@ -37,13 +44,26 @@
     <div class="right_side">
       <div class="bloc_music">
         <section>
-          <h2 class="title"> ALBUMS </h2>
+          <div class="header-section">
+            <h2 id="section-title" class="title"> TOUS LES ALBUMS </h2>
+            <h2 class="total">(10)</h2>
+          </div>
+
+          <!-- <div class="titleLinkRap" id="linkRap"></div> -->
+
           <div id="albums"></div>
         </section>
       </div>
     </div>
   </div>
   </div>
+
+
+
+
+
+
+
 
   <!--       <footer>
 
