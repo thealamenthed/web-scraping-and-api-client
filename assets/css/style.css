@@ -1,0 +1,120 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+
+
+.left_side {
+    width: 20%;
+    background: #ffffff;
+    height: 100vh;
+    padding: 15px;
+    min-height: 500px;
+
+}
+
+.right_side {
+    padding: 10px;
+    background: #fafafa;
+    min-height: 500px;
+    width: 80%;  
+}
+
+.right_side section{
+margin: 10px 20px;
+}
+
+.bloc_music {
+    background: #ffffff;
+    width: 90%;
+    min-height: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.section {
+    border: 2px solid #fafafa;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+ 
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 85%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+.category {
+    padding-top: 40px;
+}
+
+.title {
+    color: rgb(164, 155, 155);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.category ul {
+    position: relative;
+}
+
+.category ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.category ul li span {
+    color: rgb(12, 12, 12);
+    font-weight: 300;
+}
+
+.category.text li {
+    margin-bottom: 15px;
+}
+
+
+
+
+footer{
+    background: #ffffff;
+    padding: 20px 20px 20px 20px;
+    margin-top: 58px;
+
+}
+
+
+
+hr{
+    margin: 20px 0px;
+}
+
+ 
