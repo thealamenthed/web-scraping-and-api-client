@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/client/assets/css/style.css" />
+  <title>Web Scraping and Api</title>
 </head>
+
 <body>
-    
+
+  <!-- LEFT SIDE  -->
+  <div class="container">
+    <div class="left_side">
+      <a href="/client/" class="logo"><img src="/client/assets/img/Logo.png"></a>
+      <div class="category">
+        <h3 class="title">Musiques</h3>
+        <ul>
+          <li><span class="text" id="top10">Top 10</span></li>
+          <li><span class="text" id="all">Tous les albums</span></li>
+
+          <br>
+          <h3><span class="title">Catégorie </span></h3>
+
+          <li><span class="text" id="Rap">Rap</span></li>
+          <li><span class="text" id="RnB">RnB</span></li>
+          <li><span class="text" id="Pop">Pop</span></li>
+          <li><span class="text" id="Afro">Afro</span></li>
+          <li><span class="text" id="Rock">Rock</span></li>
+          <li><span class="text" id="Country">Country</span></li>
+          <li><span class="text" id="variete">Variété Française</span></li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <!--    RIGH SIDE    -->
+    <div class="right_side">
+      <div class="bloc_music">
+        <section>
+          <div class="header-section">
+            <h2 id="section-title" class="title"> TOUS LES ALBUMS </h2>
+            <h2 class="total">(10)</h2>
+          </div>
+
+          <!-- <div class="titleLinkRap" id="linkRap"></div> -->
+
+          <div id="albums"></div>
+
+          <div class="card">
+
+            <div class="artist"></div>
+            <div class="genre"></div>
+            
+            <div id="plop"></div>
+            <iframe src="https://open.spotify.com/embed/artist/23zg3TcAtWQy7J6upgbUnj" class="spotify" width="220"
+            height="250" frameborder="0" style="border-radius: 12px;" allowtransparency="true"
+            allow="encrypted-media" id="player"></iframe>
+
+            
+
+
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--       <footer>
+
+        <hr>
+        <ul class="social-network">     
+        <p>© 2022 Studio.Co</p> 
+      </ul>
+        
+      </footer> -->
+
 </body>
+
+
+<!-- AXIOS CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+  integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Local JS -->
+<script src="/client/assets/js/main.js"></script>
+
 </html>
